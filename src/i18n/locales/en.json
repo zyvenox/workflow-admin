@@ -1,0 +1,316 @@
+{
+  "app": {
+    "name": "WorkFlow",
+    "adminPanel": "Admin Panel"
+  },
+  "common": {
+    "clear": "Clear",
+    "tryAgain": "Try again",
+    "loading": "Loading...",
+    "close": "Close"
+  },
+  "navigation": {
+    "workspace": "Workspace",
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "projects": "Projects",
+    "tickets": "Tickets",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "header": {
+    "search": "Search anything...",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "language": "Language",
+    "administrator": "Administrator"
+  },
+  "dashboard": {
+    "overview": "Overview",
+    "goodMorning": "Good morning, Alex",
+    "subtitle": "Here's what's happening with your business today.",
+    "today": "Today",
+    "totalRevenue": "Total Revenue",
+    "totalUsers": "Total Users",
+    "activeProjects": "Active Projects",
+    "openTickets": "Open Tickets",
+    "vsLastMonth": "vs. last month",
+    "performance": "Performance",
+    "revenueOverview": "Revenue Overview",
+    "last7Days": "Last 7 days",
+    "liveActivity": "Live activity",
+    "recentProjects": "Recent Projects",
+    "viewAll": "View all",
+    "days": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "projects": {
+      "websiteRedesign": "Website Redesign",
+      "mobileApplication": "Mobile Application",
+      "crmIntegration": "CRM Integration",
+      "analyticsPlatform": "Analytics Platform"
+    },
+    "clients": {
+      "acme": "Acme GmbH",
+      "nordtech": "NordTech",
+      "berlinWorks": "Berlin Works",
+      "novaSystems": "Nova Systems"
+    },
+    "status": {
+      "inProgress": "In Progress",
+      "review": "Review",
+      "completed": "Completed",
+      "planning": "Planning"
+    }
+  },
+  "users": {
+    "eyebrow": "User management",
+    "title": "Users",
+    "subtitle": "Manage your team members, roles and account access.",
+    "createUser": "Create user",
+    "searchPlaceholder": "Search users by name or email...",
+    "notAvailable": "Not available",
+    "filters": {
+      "title": "Filter",
+      "allRoles": "All roles",
+      "active": "Role",
+      "clear": "Clear filters"
+    },
+    "roles": {
+      "admin": "Admin",
+      "moderator": "Moderator",
+      "user": "User"
+    },
+    "table": {
+      "title": "All users",
+      "showing": "Showing {{count}} of {{total}} users",
+      "user": "User",
+      "company": "Company",
+      "role": "Role",
+      "age": "Age",
+      "actions": "Actions",
+      "settings": "Table settings"
+    },
+    "actions": {
+      "view": "View user",
+      "more": "More actions"
+    },
+    "pagination": {
+      "page": "Page {{current}} of {{total}}",
+      "previous": "Previous page",
+      "next": "Next page"
+    },
+    "empty": {
+      "title": "No users found",
+      "message": "We couldn't find any users matching your current filters.",
+      "clear": "Clear filters"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "message": "We couldn't load the users right now. Please try again."
+    },
+    "create": {
+      "back": "Back to users",
+      "eyebrow": "User management",
+      "title": "Create a new user",
+      "subtitle": "Add a new team member and assign their role and company information.",
+      "optional": "Optional",
+      "required": "* Required fields",
+      "cancel": "Cancel",
+      "save": "Create user",
+      "saving": "Creating...",
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email address",
+        "phone": "Phone number",
+        "age": "Age",
+        "company": "Company",
+        "jobTitle": "Job title",
+        "role": "Role"
+      },
+      "placeholders": {
+        "firstName": "e.g. Anna",
+        "lastName": "e.g. Schmidt",
+        "email": "anna@example.com",
+        "phone": "+49 30 123456",
+        "age": "25",
+        "company": "e.g. Berlin Works",
+        "jobTitle": "e.g. Product Manager"
+      },
+      "sections": {
+        "personal": {
+          "title": "Personal information",
+          "description": "Basic information about the new team member."
+        },
+        "work": {
+          "title": "Work information",
+          "description": "Define the user's company and access role."
+        }
+      },
+      "validation": {
+        "firstName": "First name must contain at least 2 characters.",
+        "lastName": "Last name must contain at least 2 characters.",
+        "email": "Please enter a valid email address.",
+        "phone": "Please enter a valid phone number.",
+        "ageInteger": "Age must be a whole number.",
+        "ageMin": "User must be at least 18 years old.",
+        "ageMax": "Age cannot be greater than 100.",
+        "role": "Please select a valid role.",
+        "company": "Company name must contain at least 2 characters.",
+        "jobTitle": "Job title must contain at least 2 characters."
+      },
+      "error": {
+        "message": "We couldn't create the user right now. Please try again."
+      },
+      "success": {
+        "eyebrow": "Success",
+        "title": "User created successfully",
+        "message": "{{name}} has been created successfully.",
+        "createAnother": "Create another user",
+        "viewUsers": "View users",
+        "mockNote": "This demo API simulates the creation request and does not persist the new user on the server."
+      }
+    }
+  },
+  "userDetails": {
+    "backToUsers": "Back to users",
+    "breadcrumb": "Users /",
+    "profile": "User profile",
+    "overview": "Overview",
+    "personalInformation": "Personal information",
+    "company": "Company",
+    "location": "Location",
+    "accountStatus": "Account status",
+    "activeAccount": "Active account",
+    "active": "Active",
+    "notAvailable": "Not available",
+    "fields": {
+      "username": "Username",
+      "birthDate": "Birth date",
+      "height": "Height",
+      "weight": "Weight",
+      "department": "Department",
+      "jobTitle": "Job title",
+      "companyAddress": "Company address",
+      "address": "Address",
+      "city": "City",
+      "state": "State"
+    },
+    "error": {
+      "title": "Unable to load user",
+      "message": "We couldn't load this user's information right now. Please try again."
+    }
+  },
+  "projects": {
+    "eyebrow": "Project management",
+    "title": "Projects",
+    "subtitle": "Plan, track and manage your team's active projects.",
+    "create": "Create project",
+    "searchPlaceholder": "Search by project, client or manager...",
+    "results": "{{count}} results",
+    "stats": {
+      "total": "Total projects",
+      "budget": "Total budget",
+      "active": "Active projects",
+      "completed": "Completed"
+    },
+    "filters": {
+      "title": "Filter",
+      "allStatuses": "All statuses",
+      "clear": "Clear filters"
+    },
+    "status": {
+      "planning": "Planning",
+      "inProgress": "In Progress",
+      "review": "Review",
+      "completed": "Completed"
+    },
+    "priority": {
+      "low": "Low priority",
+      "medium": "Medium priority",
+      "high": "High priority"
+    },
+    "table": {
+      "title": "All projects",
+      "subtitle": "Your current project portfolio",
+      "project": "Project",
+      "status": "Status",
+      "progress": "Progress",
+      "budget": "Budget",
+      "deadline": "Deadline",
+      "actions": "Actions"
+    },
+    "actions": {
+      "edit": "Edit project",
+      "delete": "Delete project",
+      "more": "More actions"
+    },
+    "empty": {
+      "title": "No projects found",
+      "message": "No project matches your current search or filter."
+    },
+    "error": {
+      "title": "Unable to load projects"
+    },
+    "form": {
+      "createEyebrow": "New project",
+      "editEyebrow": "Project management",
+      "createTitle": "Create a new project",
+      "editTitle": "Edit project",
+      "fields": {
+        "name": "Project name",
+        "client": "Client",
+        "manager": "Project manager",
+        "status": "Status",
+        "priority": "Priority",
+        "budget": "Budget",
+        "deadline": "Deadline",
+        "progress": "Progress",
+        "description": "Description"
+      },
+      "placeholders": {
+        "name": "e.g. Website Redesign",
+        "client": "e.g. Acme GmbH",
+        "manager": "e.g. Emily Johnson",
+        "budget": "18500",
+        "description": "Describe the project scope..."
+      },
+      "cancel": "Cancel",
+      "create": "Create project",
+      "saving": "Saving...",
+      "saveChanges": "Save changes",
+      "submitError": "The project could not be saved. Please try again.",
+      "validation": {
+        "name": "Project name must contain at least 2 characters.",
+        "client": "Client name must contain at least 2 characters.",
+        "manager": "Manager name must contain at least 2 characters.",
+        "status": "Please select a valid status.",
+        "priority": "Please select a valid priority.",
+        "budget": "Budget must be greater than 0.",
+        "deadline": "Please select a deadline.",
+        "progressInteger": "Progress must be a whole number.",
+        "progressMin": "Progress cannot be below 0.",
+        "progressMax": "Progress cannot be above 100.",
+        "description": "Description must contain at least 10 characters."
+      }
+    },
+    "delete": {
+      "title": "Delete project?",
+      "message": "\"{{name}}\" will be permanently removed from this workspace.",
+      "cancel": "Cancel",
+      "confirm": "Delete project",
+      "deleting": "Deleting...",
+      "error": "The project could not be deleted. Please try again."
+    }
+  }
+}

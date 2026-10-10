@@ -1,0 +1,712 @@
+.ticket-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(15, 23, 42, 0.68);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  animation: ticketBackdrop 0.2s ease;
+}
+
+/* ================================
+   MODAL
+================================ */
+
+.ticket-modal {
+  width: min(720px, 100%);
+  max-height: calc(100vh - 48px);
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe3ee;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.22),
+    0 8px 24px rgba(15, 23, 42, 0.08);
+
+  animation: ticketModal 0.25s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.ticket-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 24px 26px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ticket-modal__eyebrow {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #6366f1;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.ticket-modal__header h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.04em;
+}
+
+/* ================================
+   CLOSE BUTTON
+================================ */
+
+.ticket-modal__close {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dbe3ee;
+
+  border-radius: 11px;
+
+  background: #f8fafc;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  transition:
+    all 0.18s ease;
+}
+
+.ticket-modal__close:hover:not(:disabled) {
+  border-color: #c7d2fe;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  transform: translateY(-1px);
+}
+
+.ticket-modal__close:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.ticket-modal__close:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.5;
+}
+
+/* ================================
+   FORM
+================================ */
+
+.ticket-form {
+  padding: 26px;
+}
+
+.ticket-form__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+/* ================================
+   FIELD
+================================ */
+
+.ticket-field {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-field--wide {
+  grid-column: 1 / -1;
+}
+
+/* ================================
+   LABEL
+================================ */
+
+.ticket-field label {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 9px;
+
+  color: #334155;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+.ticket-field label svg {
+  color: #6366f1;
+
+  flex-shrink: 0;
+}
+
+/* ================================
+   INPUT
+================================ */
+
+.ticket-field input,
+.ticket-field select,
+.ticket-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 11px;
+
+  outline: none;
+
+  background: #f8fafc;
+
+  color: #0f172a;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+/* ================================
+   TEXT INPUT
+================================ */
+
+.ticket-field input {
+  height: 48px;
+
+  padding: 0 14px;
+}
+
+/* ================================
+   SELECT
+================================ */
+
+.ticket-field select {
+  height: 48px;
+
+  padding: 0 14px;
+
+  cursor: pointer;
+
+  appearance: auto;
+}
+
+/* ================================
+   TEXTAREA
+================================ */
+
+.ticket-field textarea {
+  min-height: 140px;
+
+  padding: 14px;
+
+  line-height: 1.6;
+
+  resize: vertical;
+}
+
+/* ================================
+   PLACEHOLDER
+================================ */
+
+.ticket-field input::placeholder,
+.ticket-field textarea::placeholder {
+  color: #94a3b8;
+
+  opacity: 1;
+}
+
+/* ================================
+   HOVER
+================================ */
+
+.ticket-field input:hover,
+.ticket-field select:hover,
+.ticket-field textarea:hover {
+  border-color: #94a3b8;
+
+  background: #ffffff;
+}
+
+/* ================================
+   FOCUS
+================================ */
+
+.ticket-field input:focus,
+.ticket-field select:focus,
+.ticket-field textarea:focus {
+  border-color: #6366f1;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.14);
+}
+
+/* ================================
+   ERROR INPUT
+================================ */
+
+.ticket-field input:has(+ .ticket-field__error),
+.ticket-field select:has(+ .ticket-field__error),
+.ticket-field textarea:has(+ .ticket-field__error) {
+  border-color: #ef4444;
+
+  background: #fffafa;
+}
+
+.ticket-field input:has(+ .ticket-field__error):focus,
+.ticket-field select:has(+ .ticket-field__error):focus,
+.ticket-field textarea:has(+ .ticket-field__error):focus {
+  border-color: #ef4444;
+
+  box-shadow:
+    0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+/* ================================
+   ERROR MESSAGE
+================================ */
+
+.ticket-field__error {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #dc2626;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.ticket-modal__footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 28px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+.ticket-button {
+  min-height: 44px;
+
+  padding: 0 18px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    color 0.18s ease;
+}
+
+.ticket-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.55;
+}
+
+/* ================================
+   CANCEL
+================================ */
+
+.ticket-button--ghost {
+  border: 1px solid #cbd5e1;
+
+  background: #ffffff;
+
+  color: #475569;
+}
+
+.ticket-button--ghost:hover:not(:disabled) {
+  border-color: #94a3b8;
+
+  background: #f8fafc;
+
+  color: #0f172a;
+
+  transform: translateY(-1px);
+}
+
+/* ================================
+   SAVE
+================================ */
+
+.ticket-button--primary {
+  border: 1px solid #6366f1;
+
+  background: #6366f1;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 18px rgba(99, 102, 241, 0.2);
+}
+
+.ticket-button--primary:hover:not(:disabled) {
+  background: #4f46e5;
+
+  border-color: #4f46e5;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 12px 24px rgba(99, 102, 241, 0.25);
+}
+
+.ticket-button--primary:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* ================================
+   SPINNER
+================================ */
+
+.ticket-button__spinner {
+  animation:
+    ticketSpinner 0.8s linear infinite;
+}
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+.ticket-modal {
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    #cbd5e1
+    transparent;
+}
+
+.ticket-modal::-webkit-scrollbar {
+  width: 7px;
+}
+
+.ticket-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ticket-modal::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+
+  border-radius: 999px;
+}
+
+.ticket-modal::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes ticketBackdrop {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ticketModal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(18px)
+      scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+@keyframes ticketSpinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================================
+   RTL
+================================ */
+
+html[dir="rtl"] .ticket-modal__header {
+  text-align: right;
+}
+
+html[dir="rtl"] .ticket-field input,
+html[dir="rtl"] .ticket-field select,
+html[dir="rtl"] .ticket-field textarea {
+  text-align: right;
+}
+
+html[dir="rtl"] .ticket-modal__footer {
+  justify-content: flex-start;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 760px) {
+  .ticket-modal__backdrop {
+    padding: 16px;
+  }
+
+  .ticket-modal {
+    width: 100%;
+
+    max-height:
+      calc(100vh - 32px);
+
+    border-radius: 18px;
+  }
+
+  .ticket-modal__header {
+    padding:
+      22px 22px 18px;
+  }
+
+  .ticket-form {
+    padding: 22px;
+  }
+
+  .ticket-form__grid {
+    gap: 18px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 620px) {
+  .ticket-modal__backdrop {
+    align-items: flex-end;
+
+    padding: 0;
+  }
+
+  .ticket-modal {
+    width: 100%;
+
+    max-height: 92vh;
+
+    border-radius:
+      22px 22px 0 0;
+
+    animation:
+      ticketModalMobile 0.25s
+      cubic-bezier(
+        0.22,
+        1,
+        0.36,
+        1
+      );
+  }
+
+  .ticket-modal__header {
+    padding:
+      20px 18px 18px;
+  }
+
+  .ticket-modal__header h2 {
+    font-size: 22px;
+  }
+
+  .ticket-modal__close {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ticket-form {
+    padding:
+      20px 18px 18px;
+  }
+
+  .ticket-form__grid {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+  }
+
+  .ticket-field--wide {
+    grid-column: auto;
+  }
+
+  .ticket-modal__footer {
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+
+    margin-top: 24px;
+  }
+
+  .ticket-button {
+    width: 100%;
+  }
+}
+
+@keyframes ticketModalMobile {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 420px) {
+  .ticket-modal__header {
+    padding:
+      18px 16px 16px;
+  }
+
+  .ticket-form {
+    padding:
+      18px 16px 16px;
+  }
+
+  .ticket-field input,
+  .ticket-field select {
+    height: 46px;
+  }
+
+  .ticket-field textarea {
+    min-height: 120px;
+  }
+}
+
+/* ================================
+   REDUCED MOTION
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .ticket-modal__backdrop,
+  .ticket-modal,
+  .ticket-button,
+  .ticket-modal__close,
+  .ticket-field input,
+  .ticket-field select,
+  .ticket-field textarea,
+  .ticket-button__spinner {
+    animation: none;
+
+    transition: none;
+  }
+}

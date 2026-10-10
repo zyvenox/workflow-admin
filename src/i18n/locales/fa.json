@@ -1,0 +1,316 @@
+{
+  "app": {
+    "name": "WorkFlow",
+    "adminPanel": "پنل مدیریت"
+  },
+  "common": {
+    "clear": "پاک کردن",
+    "tryAgain": "تلاش دوباره",
+    "loading": "در حال بارگذاری...",
+    "close": "بستن"
+  },
+  "navigation": {
+    "workspace": "محیط کار",
+    "dashboard": "داشبورد",
+    "users": "کاربران",
+    "projects": "پروژه‌ها",
+    "tickets": "تیکت‌ها",
+    "analytics": "تحلیل‌ها",
+    "settings": "تنظیمات",
+    "logout": "خروج"
+  },
+  "header": {
+    "search": "جستجو...",
+    "openNavigation": "باز کردن منو",
+    "closeNavigation": "بستن منو",
+    "settings": "تنظیمات",
+    "notifications": "اعلان‌ها",
+    "language": "زبان",
+    "administrator": "مدیر سیستم"
+  },
+  "dashboard": {
+    "overview": "نمای کلی",
+    "goodMorning": "صبح بخیر، Alex",
+    "subtitle": "اینجا می‌توانید وضعیت امروز کسب‌وکارتان را ببینید.",
+    "today": "امروز",
+    "totalRevenue": "کل درآمد",
+    "totalUsers": "کل کاربران",
+    "activeProjects": "پروژه‌های فعال",
+    "openTickets": "تیکت‌های باز",
+    "vsLastMonth": "نسبت به ماه گذشته",
+    "performance": "عملکرد",
+    "revenueOverview": "نمای کلی درآمد",
+    "last7Days": "۷ روز گذشته",
+    "liveActivity": "فعالیت لحظه‌ای",
+    "recentProjects": "پروژه‌های اخیر",
+    "viewAll": "مشاهده همه",
+    "days": {
+      "mon": "دوشنبه",
+      "tue": "سه‌شنبه",
+      "wed": "چهارشنبه",
+      "thu": "پنجشنبه",
+      "fri": "جمعه",
+      "sat": "شنبه",
+      "sun": "یکشنبه"
+    },
+    "projects": {
+      "websiteRedesign": "بازطراحی وب‌سایت",
+      "mobileApplication": "اپلیکیشن موبایل",
+      "crmIntegration": "اتصال CRM",
+      "analyticsPlatform": "پلتفرم تحلیل"
+    },
+    "clients": {
+      "acme": "Acme GmbH",
+      "nordtech": "NordTech",
+      "berlinWorks": "Berlin Works",
+      "novaSystems": "Nova Systems"
+    },
+    "status": {
+      "inProgress": "در حال انجام",
+      "review": "در حال بررسی",
+      "completed": "تکمیل شده",
+      "planning": "در حال برنامه‌ریزی"
+    }
+  },
+  "users": {
+    "eyebrow": "مدیریت کاربران",
+    "title": "کاربران",
+    "subtitle": "اعضای تیم، نقش‌ها و دسترسی کاربران را مدیریت کنید.",
+    "createUser": "ایجاد کاربر",
+    "searchPlaceholder": "جستجوی کاربر با نام یا ایمیل...",
+    "notAvailable": "در دسترس نیست",
+    "filters": {
+      "title": "فیلتر",
+      "allRoles": "همه نقش‌ها",
+      "active": "نقش",
+      "clear": "پاک کردن فیلترها"
+    },
+    "roles": {
+      "admin": "مدیر",
+      "moderator": "ناظر",
+      "user": "کاربر"
+    },
+    "table": {
+      "title": "همه کاربران",
+      "showing": "نمایش {{count}} از {{total}} کاربر",
+      "user": "کاربر",
+      "company": "شرکت",
+      "role": "نقش",
+      "age": "سن",
+      "actions": "عملیات",
+      "settings": "تنظیمات جدول"
+    },
+    "actions": {
+      "view": "مشاهده کاربر",
+      "more": "عملیات بیشتر"
+    },
+    "pagination": {
+      "page": "صفحه {{current}} از {{total}}",
+      "previous": "صفحه قبلی",
+      "next": "صفحه بعدی"
+    },
+    "empty": {
+      "title": "کاربری پیدا نشد",
+      "message": "کاربری مطابق فیلترهای فعلی پیدا نشد.",
+      "clear": "پاک کردن فیلترها"
+    },
+    "error": {
+      "title": "خطایی رخ داد",
+      "message": "در حال حاضر امکان دریافت کاربران وجود ندارد. دوباره تلاش کنید."
+    },
+    "create": {
+      "back": "بازگشت به کاربران",
+      "eyebrow": "مدیریت کاربران",
+      "title": "ایجاد کاربر جدید",
+      "subtitle": "عضو جدید تیم را اضافه کنید و نقش و اطلاعات شرکت او را مشخص کنید.",
+      "optional": "اختیاری",
+      "required": "* فیلدهای الزامی",
+      "cancel": "لغو",
+      "save": "ایجاد کاربر",
+      "saving": "در حال ایجاد...",
+      "fields": {
+        "firstName": "نام",
+        "lastName": "نام خانوادگی",
+        "email": "آدرس ایمیل",
+        "phone": "شماره تلفن",
+        "age": "سن",
+        "company": "شرکت",
+        "jobTitle": "عنوان شغلی",
+        "role": "نقش"
+      },
+      "placeholders": {
+        "firstName": "مثلاً علی",
+        "lastName": "مثلاً رضایی",
+        "email": "ali@example.com",
+        "phone": "+98 21 123456",
+        "age": "25",
+        "company": "مثلاً Berlin Works",
+        "jobTitle": "مثلاً مدیر محصول"
+      },
+      "sections": {
+        "personal": {
+          "title": "اطلاعات شخصی",
+          "description": "اطلاعات پایه عضو جدید تیم."
+        },
+        "work": {
+          "title": "اطلاعات کاری",
+          "description": "شرکت و نقش دسترسی کاربر را مشخص کنید."
+        }
+      },
+      "validation": {
+        "firstName": "نام باید حداقل ۲ کاراکتر داشته باشد.",
+        "lastName": "نام خانوادگی باید حداقل ۲ کاراکتر داشته باشد.",
+        "email": "لطفاً یک ایمیل معتبر وارد کنید.",
+        "phone": "لطفاً یک شماره تلفن معتبر وارد کنید.",
+        "ageInteger": "سن باید یک عدد صحیح باشد.",
+        "ageMin": "کاربر باید حداقل ۱۸ سال داشته باشد.",
+        "ageMax": "سن نمی‌تواند بیشتر از ۱۰۰ باشد.",
+        "role": "لطفاً یک نقش معتبر انتخاب کنید.",
+        "company": "نام شرکت باید حداقل ۲ کاراکتر داشته باشد.",
+        "jobTitle": "عنوان شغلی باید حداقل ۲ کاراکتر داشته باشد."
+      },
+      "error": {
+        "message": "در حال حاضر امکان ایجاد کاربر وجود ندارد. دوباره تلاش کنید."
+      },
+      "success": {
+        "eyebrow": "موفق",
+        "title": "کاربر با موفقیت ایجاد شد",
+        "message": "{{name}} با موفقیت ایجاد شد.",
+        "createAnother": "ایجاد کاربر دیگر",
+        "viewUsers": "مشاهده کاربران",
+        "mockNote": "این API آزمایشی فقط درخواست ایجاد را شبیه‌سازی می‌کند و کاربر جدید را دائمی روی سرور ذخیره نمی‌کند."
+      }
+    }
+  },
+  "userDetails": {
+    "backToUsers": "بازگشت به کاربران",
+    "breadcrumb": "کاربران /",
+    "profile": "پروفایل کاربر",
+    "overview": "نمای کلی",
+    "personalInformation": "اطلاعات شخصی",
+    "company": "شرکت",
+    "location": "موقعیت",
+    "accountStatus": "وضعیت حساب",
+    "activeAccount": "حساب فعال",
+    "active": "فعال",
+    "notAvailable": "در دسترس نیست",
+    "fields": {
+      "username": "نام کاربری",
+      "birthDate": "تاریخ تولد",
+      "height": "قد",
+      "weight": "وزن",
+      "department": "دپارتمان",
+      "jobTitle": "عنوان شغلی",
+      "companyAddress": "آدرس شرکت",
+      "address": "آدرس",
+      "city": "شهر",
+      "state": "استان"
+    },
+    "error": {
+      "title": "دریافت اطلاعات کاربر ناموفق بود",
+      "message": "در حال حاضر امکان دریافت اطلاعات این کاربر وجود ندارد."
+    }
+  },
+  "projects": {
+    "eyebrow": "مدیریت پروژه‌ها",
+    "title": "پروژه‌ها",
+    "subtitle": "پروژه‌های فعال تیم را برنامه‌ریزی، پیگیری و مدیریت کنید.",
+    "create": "ایجاد پروژه",
+    "searchPlaceholder": "جستجو بر اساس پروژه، مشتری یا مدیر...",
+    "results": "{{count}} نتیجه",
+    "stats": {
+      "total": "کل پروژه‌ها",
+      "budget": "کل بودجه",
+      "active": "پروژه‌های فعال",
+      "completed": "تکمیل‌شده"
+    },
+    "filters": {
+      "title": "فیلتر",
+      "allStatuses": "همه وضعیت‌ها",
+      "clear": "پاک کردن فیلترها"
+    },
+    "status": {
+      "planning": "در حال برنامه‌ریزی",
+      "inProgress": "در حال انجام",
+      "review": "در حال بررسی",
+      "completed": "تکمیل شده"
+    },
+    "priority": {
+      "low": "اولویت پایین",
+      "medium": "اولویت متوسط",
+      "high": "اولویت بالا"
+    },
+    "table": {
+      "title": "همه پروژه‌ها",
+      "subtitle": "پروژه‌های فعلی شما",
+      "project": "پروژه",
+      "status": "وضعیت",
+      "progress": "پیشرفت",
+      "budget": "بودجه",
+      "deadline": "مهلت",
+      "actions": "عملیات"
+    },
+    "actions": {
+      "edit": "ویرایش پروژه",
+      "delete": "حذف پروژه",
+      "more": "عملیات بیشتر"
+    },
+    "empty": {
+      "title": "پروژه‌ای پیدا نشد",
+      "message": "هیچ پروژه‌ای با جستجو یا فیلتر فعلی مطابقت ندارد."
+    },
+    "error": {
+      "title": "دریافت پروژه‌ها ناموفق بود"
+    },
+    "form": {
+      "createEyebrow": "پروژه جدید",
+      "editEyebrow": "مدیریت پروژه",
+      "createTitle": "ایجاد پروژه جدید",
+      "editTitle": "ویرایش پروژه",
+      "fields": {
+        "name": "نام پروژه",
+        "client": "مشتری",
+        "manager": "مدیر پروژه",
+        "status": "وضعیت",
+        "priority": "اولویت",
+        "budget": "بودجه",
+        "deadline": "مهلت",
+        "progress": "پیشرفت",
+        "description": "توضیحات"
+      },
+      "placeholders": {
+        "name": "مثلاً بازطراحی وب‌سایت",
+        "client": "مثلاً Acme GmbH",
+        "manager": "مثلاً Emily Johnson",
+        "budget": "18500",
+        "description": "دامنه و جزئیات پروژه را توضیح دهید..."
+      },
+      "cancel": "لغو",
+      "create": "ایجاد پروژه",
+      "saving": "در حال ذخیره...",
+      "saveChanges": "ذخیره تغییرات",
+      "submitError": "ذخیره پروژه ناموفق بود. دوباره تلاش کنید.",
+      "validation": {
+        "name": "نام پروژه باید حداقل ۲ کاراکتر داشته باشد.",
+        "client": "نام مشتری باید حداقل ۲ کاراکتر داشته باشد.",
+        "manager": "نام مدیر باید حداقل ۲ کاراکتر داشته باشد.",
+        "status": "لطفاً یک وضعیت معتبر انتخاب کنید.",
+        "priority": "لطفاً یک اولویت معتبر انتخاب کنید.",
+        "budget": "بودجه باید بیشتر از صفر باشد.",
+        "deadline": "لطفاً یک مهلت انتخاب کنید.",
+        "progressInteger": "پیشرفت باید یک عدد صحیح باشد.",
+        "progressMin": "پیشرفت نمی‌تواند کمتر از صفر باشد.",
+        "progressMax": "پیشرفت نمی‌تواند بیشتر از ۱۰۰ باشد.",
+        "description": "توضیحات باید حداقل ۱۰ کاراکتر داشته باشد."
+      }
+    },
+    "delete": {
+      "title": "پروژه حذف شود؟",
+      "message": "پروژه «{{name}}» به‌صورت دائمی از این محیط کاری حذف می‌شود.",
+      "cancel": "لغو",
+      "confirm": "حذف پروژه",
+      "deleting": "در حال حذف...",
+      "error": "حذف پروژه ناموفق بود. دوباره تلاش کنید."
+    }
+  }
+}

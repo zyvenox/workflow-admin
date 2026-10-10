@@ -1,0 +1,316 @@
+{
+  "app": {
+    "name": "WorkFlow",
+    "adminPanel": "Admin Panel"
+  },
+  "common": {
+    "clear": "Löschen",
+    "tryAgain": "Erneut versuchen",
+    "loading": "Wird geladen...",
+    "close": "Schließen"
+  },
+  "navigation": {
+    "workspace": "Arbeitsbereich",
+    "dashboard": "Dashboard",
+    "users": "Benutzer",
+    "projects": "Projekte",
+    "tickets": "Tickets",
+    "analytics": "Analysen",
+    "settings": "Einstellungen",
+    "logout": "Abmelden"
+  },
+  "header": {
+    "search": "Alles durchsuchen...",
+    "openNavigation": "Navigation öffnen",
+    "closeNavigation": "Navigation schließen",
+    "settings": "Einstellungen",
+    "notifications": "Benachrichtigungen",
+    "language": "Sprache",
+    "administrator": "Administrator"
+  },
+  "dashboard": {
+    "overview": "Übersicht",
+    "goodMorning": "Guten Morgen, Alex",
+    "subtitle": "Hier sehen Sie, was heute in Ihrem Unternehmen passiert.",
+    "today": "Heute",
+    "totalRevenue": "Gesamtumsatz",
+    "totalUsers": "Benutzer insgesamt",
+    "activeProjects": "Aktive Projekte",
+    "openTickets": "Offene Tickets",
+    "vsLastMonth": "im Vergleich zum letzten Monat",
+    "performance": "Leistung",
+    "revenueOverview": "Umsatzübersicht",
+    "last7Days": "Letzte 7 Tage",
+    "liveActivity": "Live-Aktivität",
+    "recentProjects": "Aktuelle Projekte",
+    "viewAll": "Alle anzeigen",
+    "days": {
+      "mon": "Mo",
+      "tue": "Di",
+      "wed": "Mi",
+      "thu": "Do",
+      "fri": "Fr",
+      "sat": "Sa",
+      "sun": "So"
+    },
+    "projects": {
+      "websiteRedesign": "Website-Redesign",
+      "mobileApplication": "Mobile Anwendung",
+      "crmIntegration": "CRM-Integration",
+      "analyticsPlatform": "Analytics-Plattform"
+    },
+    "clients": {
+      "acme": "Acme GmbH",
+      "nordtech": "NordTech",
+      "berlinWorks": "Berlin Works",
+      "novaSystems": "Nova Systems"
+    },
+    "status": {
+      "inProgress": "In Bearbeitung",
+      "review": "Prüfung",
+      "completed": "Abgeschlossen",
+      "planning": "Planung"
+    }
+  },
+  "users": {
+    "eyebrow": "Benutzerverwaltung",
+    "title": "Benutzer",
+    "subtitle": "Verwalten Sie Teammitglieder, Rollen und Zugriffsrechte.",
+    "createUser": "Benutzer erstellen",
+    "searchPlaceholder": "Benutzer nach Name oder E-Mail suchen...",
+    "notAvailable": "Nicht verfügbar",
+    "filters": {
+      "title": "Filter",
+      "allRoles": "Alle Rollen",
+      "active": "Rolle",
+      "clear": "Filter löschen"
+    },
+    "roles": {
+      "admin": "Admin",
+      "moderator": "Moderator",
+      "user": "Benutzer"
+    },
+    "table": {
+      "title": "Alle Benutzer",
+      "showing": "{{count}} von {{total}} Benutzern",
+      "user": "Benutzer",
+      "company": "Unternehmen",
+      "role": "Rolle",
+      "age": "Alter",
+      "actions": "Aktionen",
+      "settings": "Tabelleneinstellungen"
+    },
+    "actions": {
+      "view": "Benutzer anzeigen",
+      "more": "Weitere Aktionen"
+    },
+    "pagination": {
+      "page": "Seite {{current}} von {{total}}",
+      "previous": "Vorherige Seite",
+      "next": "Nächste Seite"
+    },
+    "empty": {
+      "title": "Keine Benutzer gefunden",
+      "message": "Für die aktuellen Filter wurden keine Benutzer gefunden.",
+      "clear": "Filter löschen"
+    },
+    "error": {
+      "title": "Etwas ist schiefgelaufen",
+      "message": "Die Benutzer konnten gerade nicht geladen werden. Bitte versuchen Sie es erneut."
+    },
+    "create": {
+      "back": "Zurück zu den Benutzern",
+      "eyebrow": "Benutzerverwaltung",
+      "title": "Neuen Benutzer erstellen",
+      "subtitle": "Fügen Sie ein neues Teammitglied hinzu und legen Sie Rolle und Unternehmensdaten fest.",
+      "optional": "Optional",
+      "required": "* Pflichtfelder",
+      "cancel": "Abbrechen",
+      "save": "Benutzer erstellen",
+      "saving": "Wird erstellt...",
+      "fields": {
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "email": "E-Mail-Adresse",
+        "phone": "Telefonnummer",
+        "age": "Alter",
+        "company": "Unternehmen",
+        "jobTitle": "Position",
+        "role": "Rolle"
+      },
+      "placeholders": {
+        "firstName": "z. B. Anna",
+        "lastName": "z. B. Schmidt",
+        "email": "anna@example.com",
+        "phone": "+49 30 123456",
+        "age": "25",
+        "company": "z. B. Berlin Works",
+        "jobTitle": "z. B. Product Manager"
+      },
+      "sections": {
+        "personal": {
+          "title": "Persönliche Informationen",
+          "description": "Grundlegende Informationen über das neue Teammitglied."
+        },
+        "work": {
+          "title": "Arbeitsinformationen",
+          "description": "Legen Sie Unternehmen und Zugriffsrolle des Benutzers fest."
+        }
+      },
+      "validation": {
+        "firstName": "Der Vorname muss mindestens 2 Zeichen enthalten.",
+        "lastName": "Der Nachname muss mindestens 2 Zeichen enthalten.",
+        "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "phone": "Bitte geben Sie eine gültige Telefonnummer ein.",
+        "ageInteger": "Das Alter muss eine ganze Zahl sein.",
+        "ageMin": "Der Benutzer muss mindestens 18 Jahre alt sein.",
+        "ageMax": "Das Alter darf nicht größer als 100 sein.",
+        "role": "Bitte wählen Sie eine gültige Rolle.",
+        "company": "Der Firmenname muss mindestens 2 Zeichen enthalten.",
+        "jobTitle": "Die Position muss mindestens 2 Zeichen enthalten."
+      },
+      "error": {
+        "message": "Der Benutzer konnte gerade nicht erstellt werden. Bitte versuchen Sie es erneut."
+      },
+      "success": {
+        "eyebrow": "Erfolgreich",
+        "title": "Benutzer erfolgreich erstellt",
+        "message": "{{name}} wurde erfolgreich erstellt.",
+        "createAnother": "Weiteren Benutzer erstellen",
+        "viewUsers": "Benutzer anzeigen",
+        "mockNote": "Diese Demo-API simuliert die Erstellung und speichert den neuen Benutzer nicht dauerhaft auf dem Server."
+      }
+    }
+  },
+  "userDetails": {
+    "backToUsers": "Zurück zu den Benutzern",
+    "breadcrumb": "Benutzer /",
+    "profile": "Benutzerprofil",
+    "overview": "Übersicht",
+    "personalInformation": "Persönliche Informationen",
+    "company": "Unternehmen",
+    "location": "Standort",
+    "accountStatus": "Kontostatus",
+    "activeAccount": "Aktives Konto",
+    "active": "Aktiv",
+    "notAvailable": "Nicht verfügbar",
+    "fields": {
+      "username": "Benutzername",
+      "birthDate": "Geburtsdatum",
+      "height": "Größe",
+      "weight": "Gewicht",
+      "department": "Abteilung",
+      "jobTitle": "Position",
+      "companyAddress": "Firmenadresse",
+      "address": "Adresse",
+      "city": "Stadt",
+      "state": "Bundesland"
+    },
+    "error": {
+      "title": "Benutzer konnte nicht geladen werden",
+      "message": "Die Informationen dieses Benutzers konnten gerade nicht geladen werden. Bitte versuchen Sie es erneut."
+    }
+  },
+  "projects": {
+    "eyebrow": "Projektverwaltung",
+    "title": "Projekte",
+    "subtitle": "Planen, verfolgen und verwalten Sie die aktiven Projekte Ihres Teams.",
+    "create": "Projekt erstellen",
+    "searchPlaceholder": "Nach Projekt, Kunde oder Manager suchen...",
+    "results": "{{count}} Ergebnisse",
+    "stats": {
+      "total": "Projekte insgesamt",
+      "budget": "Gesamtbudget",
+      "active": "Aktive Projekte",
+      "completed": "Abgeschlossen"
+    },
+    "filters": {
+      "title": "Filter",
+      "allStatuses": "Alle Status",
+      "clear": "Filter löschen"
+    },
+    "status": {
+      "planning": "Planung",
+      "inProgress": "In Bearbeitung",
+      "review": "Prüfung",
+      "completed": "Abgeschlossen"
+    },
+    "priority": {
+      "low": "Niedrige Priorität",
+      "medium": "Mittlere Priorität",
+      "high": "Hohe Priorität"
+    },
+    "table": {
+      "title": "Alle Projekte",
+      "subtitle": "Ihr aktuelles Projektportfolio",
+      "project": "Projekt",
+      "status": "Status",
+      "progress": "Fortschritt",
+      "budget": "Budget",
+      "deadline": "Frist",
+      "actions": "Aktionen"
+    },
+    "actions": {
+      "edit": "Projekt bearbeiten",
+      "delete": "Projekt löschen",
+      "more": "Weitere Aktionen"
+    },
+    "empty": {
+      "title": "Keine Projekte gefunden",
+      "message": "Kein Projekt entspricht Ihrer aktuellen Suche oder Ihrem Filter."
+    },
+    "error": {
+      "title": "Projekte konnten nicht geladen werden"
+    },
+    "form": {
+      "createEyebrow": "Neues Projekt",
+      "editEyebrow": "Projektverwaltung",
+      "createTitle": "Neues Projekt erstellen",
+      "editTitle": "Projekt bearbeiten",
+      "fields": {
+        "name": "Projektname",
+        "client": "Kunde",
+        "manager": "Projektmanager",
+        "status": "Status",
+        "priority": "Priorität",
+        "budget": "Budget",
+        "deadline": "Frist",
+        "progress": "Fortschritt",
+        "description": "Beschreibung"
+      },
+      "placeholders": {
+        "name": "z. B. Website-Redesign",
+        "client": "z. B. Acme GmbH",
+        "manager": "z. B. Emily Johnson",
+        "budget": "18500",
+        "description": "Projektumfang beschreiben..."
+      },
+      "cancel": "Abbrechen",
+      "create": "Projekt erstellen",
+      "saving": "Wird gespeichert...",
+      "saveChanges": "Änderungen speichern",
+      "submitError": "Das Projekt konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.",
+      "validation": {
+        "name": "Der Projektname muss mindestens 2 Zeichen enthalten.",
+        "client": "Der Kundenname muss mindestens 2 Zeichen enthalten.",
+        "manager": "Der Managername muss mindestens 2 Zeichen enthalten.",
+        "status": "Bitte wählen Sie einen gültigen Status.",
+        "priority": "Bitte wählen Sie eine gültige Priorität.",
+        "budget": "Das Budget muss größer als 0 sein.",
+        "deadline": "Bitte wählen Sie eine Frist.",
+        "progressInteger": "Der Fortschritt muss eine ganze Zahl sein.",
+        "progressMin": "Der Fortschritt darf nicht unter 0 liegen.",
+        "progressMax": "Der Fortschritt darf nicht über 100 liegen.",
+        "description": "Die Beschreibung muss mindestens 10 Zeichen enthalten."
+      }
+    },
+    "delete": {
+      "title": "Projekt löschen?",
+      "message": "\"{{name}}\" wird dauerhaft aus diesem Arbeitsbereich entfernt.",
+      "cancel": "Abbrechen",
+      "confirm": "Projekt löschen",
+      "deleting": "Wird gelöscht...",
+      "error": "Das Projekt konnte nicht gelöscht werden. Bitte versuchen Sie es erneut."
+    }
+  }
+}
